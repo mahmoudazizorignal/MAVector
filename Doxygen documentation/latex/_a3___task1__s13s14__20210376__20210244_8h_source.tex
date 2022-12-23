@@ -1,0 +1,395 @@
+\hypertarget{_a3___task1__s13s14__20210376__20210244_8h_source}{}\doxysection{A3\+\_\+\+Task1\+\_\+s13s14\+\_\+20210376\+\_\+20210244.\+h}
+\mbox{\hyperlink{_a3___task1__s13s14__20210376__20210244_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef A3\_TASK1\_S13S14\_20210376\_20210244\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define A3\_TASK1\_S13S14\_20210376\_20210244\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iterator>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <initializer\_list>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <iterator>}}
+\DoxyCodeLine{14 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{20 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{class_m_a_vector}{MAVector}} \{}
+\DoxyCodeLine{22     \textcolor{keyword}{private}:}
+\DoxyCodeLine{26         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_m_a_vector_a16be4426600eb02b465be3e95ca37902}{capacity}};}
+\DoxyCodeLine{30         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_m_a_vector_a7c04a21bb8ce2459c04f7b4bc675b5bd}{sz}};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{35         T* \mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37     \textcolor{keyword}{public}:}
+\DoxyCodeLine{41         \textcolor{keyword}{typedef} T* \mbox{\hyperlink{class_m_a_vector_a63c980ddfc0e0295d940cd09c95f206c}{iterator}};}
+\DoxyCodeLine{45         \mbox{\hyperlink{class_m_a_vector_af2a5aa3469ec9fb7ac246a41b8501beb}{MAVector}}();}
+\DoxyCodeLine{50         \mbox{\hyperlink{class_m_a_vector_af2a5aa3469ec9fb7ac246a41b8501beb}{MAVector}}(\textcolor{keywordtype}{int} n);}
+\DoxyCodeLine{56         \mbox{\hyperlink{class_m_a_vector_af2a5aa3469ec9fb7ac246a41b8501beb}{MAVector}}(T* a, \textcolor{keywordtype}{int} n);}
+\DoxyCodeLine{61         \mbox{\hyperlink{class_m_a_vector_af2a5aa3469ec9fb7ac246a41b8501beb}{MAVector}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_m_a_vector}{MAVector}}\& other);}
+\DoxyCodeLine{66         \mbox{\hyperlink{class_m_a_vector_af2a5aa3469ec9fb7ac246a41b8501beb}{MAVector}}(\mbox{\hyperlink{class_m_a_vector}{MAVector}}\&\& other);}
+\DoxyCodeLine{71         \mbox{\hyperlink{class_m_a_vector_af2a5aa3469ec9fb7ac246a41b8501beb}{MAVector}}(initializer\_list<T> lst);}
+\DoxyCodeLine{75         \mbox{\hyperlink{class_m_a_vector_a2e1a19ee33ae43e63aa86b46cccf68f9}{\string~MAVector}}();}
+\DoxyCodeLine{81         \mbox{\hyperlink{class_m_a_vector}{MAVector}}\& \mbox{\hyperlink{class_m_a_vector_a45faecab6d63075ecd5abd47a1faefc8}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_m_a_vector}{MAVector}}\& other);}
+\DoxyCodeLine{87         \mbox{\hyperlink{class_m_a_vector}{MAVector}}\& \mbox{\hyperlink{class_m_a_vector_a45faecab6d63075ecd5abd47a1faefc8}{operator=}}(\mbox{\hyperlink{class_m_a_vector}{MAVector}}\&\& other);}
+\DoxyCodeLine{93         T\& \mbox{\hyperlink{class_m_a_vector_a67dfd225a59832032fa8d8fc5fead3a5}{operator[] }}(\textcolor{keywordtype}{int} k);}
+\DoxyCodeLine{99         T \mbox{\hyperlink{class_m_a_vector_a67dfd225a59832032fa8d8fc5fead3a5}{operator[] }}(\textcolor{keywordtype}{int} k) \textcolor{keyword}{const};}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{106         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_m_a_vector_a19cdd381b1e826f4eed9c113783249e0}{push\_back}}(\textcolor{keyword}{const} T\& Element);}
+\DoxyCodeLine{111         T \mbox{\hyperlink{class_m_a_vector_af5499889ca5961bb2c720c4845fbf021}{pop\_back}}();}
+\DoxyCodeLine{112         }
+\DoxyCodeLine{117         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_vector_a680efa33479aea937df60340bb719bec}{erase}}(T* \mbox{\hyperlink{class_m_a_vector_a63c980ddfc0e0295d940cd09c95f206c}{iterator}});}
+\DoxyCodeLine{123         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_vector_a680efa33479aea937df60340bb719bec}{erase}}(T* it1, T* it2);}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{128         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_vector_a4f9f679233fd4d47cefc42c73b6bdfbe}{clear}}();}
+\DoxyCodeLine{134         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_vector_a81fcd90efb7cc77b54a146b149db926c}{insert}}(T* it1, \textcolor{keyword}{const} T\& Element);}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{140         \mbox{\hyperlink{class_m_a_vector_a63c980ddfc0e0295d940cd09c95f206c}{iterator}} \mbox{\hyperlink{class_m_a_vector_af45b39c5a0e9af80715994dd0ce6e284}{begin}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{146         \mbox{\hyperlink{class_m_a_vector_a63c980ddfc0e0295d940cd09c95f206c}{iterator}} \mbox{\hyperlink{class_m_a_vector_a5360a88b3b65b25b331b7226e92c25a6}{end}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{152         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_m_a_vector_a327a6efa83d5fdb6235b4383a97a8718}{size}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{158         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_m_a_vector_a1cce856112c294153eac138829cd7e13}{Capacity}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{164         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_vector_a35fbc415322a86ac3b4ceab1bbb802b7}{resize}}(\textcolor{keywordtype}{int} s);}
+\DoxyCodeLine{165 }
+\DoxyCodeLine{170         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_m_a_vector_acf998fa1e2be7b514cec186a6d22ce05}{empty}}();}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{177         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_m_a_vector_a0fd2a162f417cdfc209359769a9e72b0}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_m_a_vector}{MAVector<T>}}\&);}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{184         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_m_a_vector_a5f5f45cc00a7c451d49c2b8262f2e964}{operator< }}(\textcolor{keyword}{const} \mbox{\hyperlink{class_m_a_vector}{MAVector<T>}}\&);}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{192         \textcolor{keyword}{friend} ostream\& \mbox{\hyperlink{class_m_a_vector_ab00a435cb7695031816a52641c6c61bf}{operator<< }}(ostream\& out, \mbox{\hyperlink{class_m_a_vector}{MAVector<T>}}\& v) \{}
+\DoxyCodeLine{193             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < v.\mbox{\hyperlink{class_m_a_vector_a7c04a21bb8ce2459c04f7b4bc675b5bd}{sz}}; i++) \{}
+\DoxyCodeLine{194                 out << v.\mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}}[i] << \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{195             \}}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197             \textcolor{keywordflow}{return} out;}
+\DoxyCodeLine{198         \}}
+\DoxyCodeLine{199 \};}
+\DoxyCodeLine{200 }
+\DoxyCodeLine{201 }
+\DoxyCodeLine{202 \textcolor{keyword}{template} <\textcolor{keyword}{class} T> \mbox{\hyperlink{class_m_a_vector_af2a5aa3469ec9fb7ac246a41b8501beb}{MAVector<T>::MAVector}}() : sz(0), capacity(10) \{}
+\DoxyCodeLine{203     \mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}} = \textcolor{keyword}{new} T[\mbox{\hyperlink{class_m_a_vector_a16be4426600eb02b465be3e95ca37902}{capacity}}];}
+\DoxyCodeLine{204 \}}
+\DoxyCodeLine{205 \textcolor{keyword}{template} <\textcolor{keyword}{class} T> \mbox{\hyperlink{class_m_a_vector_af2a5aa3469ec9fb7ac246a41b8501beb}{MAVector<T>::MAVector}}(\textcolor{keywordtype}{int} n)}
+\DoxyCodeLine{206     : sz(n), capacity(max(10, n))}
+\DoxyCodeLine{207 \{}
+\DoxyCodeLine{208     \mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}} = \textcolor{keyword}{new} T[\mbox{\hyperlink{class_m_a_vector_a16be4426600eb02b465be3e95ca37902}{capacity}}];}
+\DoxyCodeLine{209 \}}
+\DoxyCodeLine{210 \textcolor{keyword}{template} <\textcolor{keyword}{class} T> \mbox{\hyperlink{class_m_a_vector_af2a5aa3469ec9fb7ac246a41b8501beb}{MAVector<T>::MAVector}}(T* a, \textcolor{keywordtype}{int} n)}
+\DoxyCodeLine{211     : sz(n), capacity(max(10, n))}
+\DoxyCodeLine{212 \{}
+\DoxyCodeLine{213     \mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}} = \textcolor{keyword}{new} T[\mbox{\hyperlink{class_m_a_vector_a16be4426600eb02b465be3e95ca37902}{capacity}}];}
+\DoxyCodeLine{214     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_m_a_vector_a7c04a21bb8ce2459c04f7b4bc675b5bd}{sz}}; i++) \{}
+\DoxyCodeLine{215         \mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}}[i] = a[i];}
+\DoxyCodeLine{216     \}}
+\DoxyCodeLine{217 \}}
+\DoxyCodeLine{218 \textcolor{keyword}{template} <\textcolor{keyword}{class} T> \mbox{\hyperlink{class_m_a_vector_af2a5aa3469ec9fb7ac246a41b8501beb}{MAVector<T>::MAVector}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_m_a_vector}{MAVector}}\& other)}
+\DoxyCodeLine{219     : sz(other.sz), capacity(other.capacity)}
+\DoxyCodeLine{220 \{}
+\DoxyCodeLine{221     \mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}} = \textcolor{keyword}{new} T[\mbox{\hyperlink{class_m_a_vector_a16be4426600eb02b465be3e95ca37902}{capacity}}];}
+\DoxyCodeLine{222     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_m_a_vector_a7c04a21bb8ce2459c04f7b4bc675b5bd}{sz}}; i++) \{}
+\DoxyCodeLine{223         \mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}}[i] = other.\mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}}[i];}
+\DoxyCodeLine{224     \}}
+\DoxyCodeLine{225 \}}
+\DoxyCodeLine{226 \textcolor{keyword}{template} <\textcolor{keyword}{class} T> \mbox{\hyperlink{class_m_a_vector_af2a5aa3469ec9fb7ac246a41b8501beb}{MAVector<T>::MAVector}}(\mbox{\hyperlink{class_m_a_vector}{MAVector}}\&\& other)}
+\DoxyCodeLine{227     : sz(other.sz), capacity(other.capacity)}
+\DoxyCodeLine{228 \{}
+\DoxyCodeLine{229     \mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}} = \textcolor{keyword}{new} T[\mbox{\hyperlink{class_m_a_vector_a16be4426600eb02b465be3e95ca37902}{capacity}}];}
+\DoxyCodeLine{230     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_m_a_vector_a7c04a21bb8ce2459c04f7b4bc675b5bd}{sz}}; i++) \{}
+\DoxyCodeLine{231         \mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}}[i] = other.arr[i];}
+\DoxyCodeLine{232     \}}
+\DoxyCodeLine{233     \textcolor{keyword}{delete}[] other.arr;}
+\DoxyCodeLine{234 \}}
+\DoxyCodeLine{235 \textcolor{keyword}{template} <\textcolor{keyword}{class} T> \mbox{\hyperlink{class_m_a_vector_a2e1a19ee33ae43e63aa86b46cccf68f9}{MAVector<T>::\string~MAVector}}() \{}
+\DoxyCodeLine{236     \textcolor{keyword}{delete}[] arr;}
+\DoxyCodeLine{237 \}}
+\DoxyCodeLine{238 }
+\DoxyCodeLine{239 \textcolor{keyword}{template} <\textcolor{keyword}{class} T> \mbox{\hyperlink{class_m_a_vector_af2a5aa3469ec9fb7ac246a41b8501beb}{MAVector<T>::MAVector}}(initializer\_list<T> lst)}
+\DoxyCodeLine{240     : sz(lst.size()), capacity(lst.size())}
+\DoxyCodeLine{241 \{}
+\DoxyCodeLine{242     \mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}} = \textcolor{keyword}{new} T[\mbox{\hyperlink{class_m_a_vector_a7c04a21bb8ce2459c04f7b4bc675b5bd}{sz}}];}
+\DoxyCodeLine{243     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = lst.begin(); it != lst.end(); it++)}
+\DoxyCodeLine{244     \{}
+\DoxyCodeLine{245         \mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}}[it -\/ lst.begin()] = *it;}
+\DoxyCodeLine{246     \}}
+\DoxyCodeLine{247 \}}
+\DoxyCodeLine{248 }
+\DoxyCodeLine{249 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{250 \mbox{\hyperlink{class_m_a_vector}{MAVector<T>}}\& \mbox{\hyperlink{class_m_a_vector_a45faecab6d63075ecd5abd47a1faefc8}{MAVector<T>::operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_m_a_vector}{MAVector<T>}}\& other) \{}
+\DoxyCodeLine{251     sz = other.\mbox{\hyperlink{class_m_a_vector_a7c04a21bb8ce2459c04f7b4bc675b5bd}{sz}};}
+\DoxyCodeLine{252     capacity = other.\mbox{\hyperlink{class_m_a_vector_a16be4426600eb02b465be3e95ca37902}{capacity}};}
+\DoxyCodeLine{253 }
+\DoxyCodeLine{254     \textcolor{keyword}{delete}[] arr;}
+\DoxyCodeLine{255     arr = \textcolor{keyword}{new} T[capacity];}
+\DoxyCodeLine{256     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sz; i++) \{}
+\DoxyCodeLine{257         arr[i] = other.\mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}}[i];}
+\DoxyCodeLine{258     \}}
+\DoxyCodeLine{259     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{260 \}}
+\DoxyCodeLine{261 }
+\DoxyCodeLine{262 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{263 \mbox{\hyperlink{class_m_a_vector}{MAVector<T>}}\& \mbox{\hyperlink{class_m_a_vector_a45faecab6d63075ecd5abd47a1faefc8}{MAVector<T>::operator=}}(\mbox{\hyperlink{class_m_a_vector}{MAVector<T>}}\&\& other) \{}
+\DoxyCodeLine{264     sz = other.\mbox{\hyperlink{class_m_a_vector_a7c04a21bb8ce2459c04f7b4bc675b5bd}{sz}};}
+\DoxyCodeLine{265     capacity = other.capacity;}
+\DoxyCodeLine{266 }
+\DoxyCodeLine{267     \textcolor{keyword}{delete}[] arr;}
+\DoxyCodeLine{268     arr = \textcolor{keyword}{new} T[capacity];}
+\DoxyCodeLine{269     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sz; i++) \{}
+\DoxyCodeLine{270         arr[i] = other.arr[i];}
+\DoxyCodeLine{271     \}}
+\DoxyCodeLine{272     \textcolor{keyword}{delete}[] other.arr;}
+\DoxyCodeLine{273     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{274 \}}
+\DoxyCodeLine{275 }
+\DoxyCodeLine{276 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{277 T\& \mbox{\hyperlink{class_m_a_vector_a67dfd225a59832032fa8d8fc5fead3a5}{MAVector<T>::operator[] }}(\textcolor{keywordtype}{int} k) \{}
+\DoxyCodeLine{278     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{279         \textcolor{keywordflow}{if} (k < 0 || k >= sz) \{}
+\DoxyCodeLine{280             \textcolor{keywordflow}{throw} k;}
+\DoxyCodeLine{281         \}}
+\DoxyCodeLine{282         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{283             \textcolor{keywordflow}{return} arr[k];}
+\DoxyCodeLine{284         \}}
+\DoxyCodeLine{285     \}}
+\DoxyCodeLine{286     \textcolor{keywordflow}{catch} (\textcolor{keywordtype}{int} k) \{}
+\DoxyCodeLine{287         cout << \textcolor{stringliteral}{"{}Error Out Of Bound!"{}} << endl;}
+\DoxyCodeLine{288         \mbox{\hyperlink{class_m_a_vector_a2e1a19ee33ae43e63aa86b46cccf68f9}{MAVector::\string~MAVector}}();}
+\DoxyCodeLine{289         exit(-\/1);}
+\DoxyCodeLine{290     \}}
+\DoxyCodeLine{291 \}}
+\DoxyCodeLine{292 }
+\DoxyCodeLine{293 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{294 T \mbox{\hyperlink{class_m_a_vector_a67dfd225a59832032fa8d8fc5fead3a5}{MAVector<T>::operator[] }}(\textcolor{keywordtype}{int} k)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{295     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{296         \textcolor{keywordflow}{if} (k < 0 || k >= sz) \{}
+\DoxyCodeLine{297             \textcolor{keywordflow}{throw} k;}
+\DoxyCodeLine{298         \}}
+\DoxyCodeLine{299         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{300             \textcolor{keywordflow}{return} arr[k];}
+\DoxyCodeLine{301         \}}
+\DoxyCodeLine{302     \}}
+\DoxyCodeLine{303     \textcolor{keywordflow}{catch} (\textcolor{keywordtype}{int} k) \{}
+\DoxyCodeLine{304         cout << \textcolor{stringliteral}{"{}Error Out Of Bound!"{}} << endl;}
+\DoxyCodeLine{305         \mbox{\hyperlink{class_m_a_vector_a2e1a19ee33ae43e63aa86b46cccf68f9}{MAVector::\string~MAVector}}();}
+\DoxyCodeLine{306         exit(-\/1);}
+\DoxyCodeLine{307     \}}
+\DoxyCodeLine{308 \}}
+\DoxyCodeLine{309 }
+\DoxyCodeLine{310 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{311 \textcolor{keywordtype}{int} \mbox{\hyperlink{class_m_a_vector_a19cdd381b1e826f4eed9c113783249e0}{MAVector<T>::push\_back}}(\textcolor{keyword}{const} T\& Element) \{}
+\DoxyCodeLine{312     \textcolor{keywordflow}{if} (sz == capacity) \{}
+\DoxyCodeLine{313         capacity *= 2;}
+\DoxyCodeLine{314 }
+\DoxyCodeLine{315         T* newArr = \textcolor{keyword}{new} T[capacity];}
+\DoxyCodeLine{316         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sz; i++) \{}
+\DoxyCodeLine{317             newArr[i] = arr[i];}
+\DoxyCodeLine{318         \}}
+\DoxyCodeLine{319         newArr[sz++] = Element;}
+\DoxyCodeLine{320 }
+\DoxyCodeLine{321         \textcolor{keyword}{delete}[] arr;}
+\DoxyCodeLine{322         arr = newArr;}
+\DoxyCodeLine{323         newArr = NULL;}
+\DoxyCodeLine{324     \}}
+\DoxyCodeLine{325     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{326         arr[sz++] = Element;}
+\DoxyCodeLine{327     \}}
+\DoxyCodeLine{328     \textcolor{keywordflow}{return} sz;}
+\DoxyCodeLine{329 \}}
+\DoxyCodeLine{330 }
+\DoxyCodeLine{331 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{332 T \mbox{\hyperlink{class_m_a_vector_af5499889ca5961bb2c720c4845fbf021}{MAVector<T>::pop\_back}}() \{}
+\DoxyCodeLine{333     T Element = arr[sz -\/ 1];}
+\DoxyCodeLine{334     arr[sz -\/ 1] = T();}
+\DoxyCodeLine{335     sz-\/-\/;}
+\DoxyCodeLine{336 }
+\DoxyCodeLine{337     \textcolor{keywordflow}{return} Element;}
+\DoxyCodeLine{338 \}}
+\DoxyCodeLine{339 }
+\DoxyCodeLine{340 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{341 \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_vector_a680efa33479aea937df60340bb719bec}{MAVector<T>::erase}}(T* \mbox{\hyperlink{class_m_a_vector_a63c980ddfc0e0295d940cd09c95f206c}{iterator}}) \{}
+\DoxyCodeLine{342     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{343         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_m_a_vector_a63c980ddfc0e0295d940cd09c95f206c}{iterator}} -\/ arr < 0 || iterator -\/ arr >= sz) \{}
+\DoxyCodeLine{344             \textcolor{keywordflow}{throw} \textcolor{charliteral}{'e'};}
+\DoxyCodeLine{345         \}}
+\DoxyCodeLine{346         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{347             T* newArr = \textcolor{keyword}{new} T[capacity -\/ 1];}
+\DoxyCodeLine{348             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = begin(); it < \mbox{\hyperlink{class_m_a_vector_a63c980ddfc0e0295d940cd09c95f206c}{iterator}}; it++) \{}
+\DoxyCodeLine{349                 newArr[it -\/ arr] = *it;}
+\DoxyCodeLine{350             \}}
+\DoxyCodeLine{351             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = \mbox{\hyperlink{class_m_a_vector_a63c980ddfc0e0295d940cd09c95f206c}{iterator}} + 1; it < end(); it++)}
+\DoxyCodeLine{352             \{}
+\DoxyCodeLine{353                 newArr[it -\/ arr -\/ 1] = *it;}
+\DoxyCodeLine{354             \}}
+\DoxyCodeLine{355 }
+\DoxyCodeLine{356             \textcolor{keyword}{delete}[] arr;}
+\DoxyCodeLine{357             arr = newArr;}
+\DoxyCodeLine{358             sz-\/-\/;}
+\DoxyCodeLine{359             capacity-\/-\/;}
+\DoxyCodeLine{360 }
+\DoxyCodeLine{361             newArr = NULL;}
+\DoxyCodeLine{362         \}}
+\DoxyCodeLine{363     \}}
+\DoxyCodeLine{364     \textcolor{keywordflow}{catch} (\textcolor{keywordtype}{char} ch) \{}
+\DoxyCodeLine{365         cout << \textcolor{stringliteral}{"{}Error Out Of Bounds\(\backslash\)n"{}};}
+\DoxyCodeLine{366         exit(-\/1);}
+\DoxyCodeLine{367     \}}
+\DoxyCodeLine{368 \}}
+\DoxyCodeLine{369 }
+\DoxyCodeLine{370 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{371 \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_vector_a680efa33479aea937df60340bb719bec}{MAVector<T>::erase}}(T* it1, T* it2) \{}
+\DoxyCodeLine{372     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{373         \textcolor{keywordflow}{if} (it1 -\/ arr < 0 || it1 -\/ arr >= sz) \textcolor{keywordflow}{throw} \textcolor{charliteral}{'e'};}
+\DoxyCodeLine{374         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (it2 -\/ arr < 0 || it2 -\/ arr > sz) \textcolor{keywordflow}{throw} \textcolor{charliteral}{'e'};}
+\DoxyCodeLine{375         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (it2 -\/ arr < it1 -\/ arr) \textcolor{keywordflow}{throw} \textcolor{charliteral}{'e'};}
+\DoxyCodeLine{376         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{377             T* newArr = \textcolor{keyword}{new} T[capacity -\/ (it2 -\/ it1)];}
+\DoxyCodeLine{378             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = begin(); it < it1; it++) \{}
+\DoxyCodeLine{379                 newArr[it -\/ begin()] = arr[it -\/ begin()];}
+\DoxyCodeLine{380             \}}
+\DoxyCodeLine{381             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = it2; it < end(); it++) \{}
+\DoxyCodeLine{382                 newArr[it -\/ begin() -\/ (it2 -\/ it1)] = arr[it -\/ begin()];}
+\DoxyCodeLine{383             \}}
+\DoxyCodeLine{384 }
+\DoxyCodeLine{385             \textcolor{keyword}{delete}[] arr;}
+\DoxyCodeLine{386             arr = newArr;}
+\DoxyCodeLine{387             sz -\/= (it2 -\/ it1);}
+\DoxyCodeLine{388             capacity -\/= (it2 -\/ it1);}
+\DoxyCodeLine{389             newArr = NULL;}
+\DoxyCodeLine{390         \}}
+\DoxyCodeLine{391     \}}
+\DoxyCodeLine{392     \textcolor{keywordflow}{catch} (\textcolor{keywordtype}{char} ch) \{}
+\DoxyCodeLine{393         cout << \textcolor{stringliteral}{"{}Error Out Of Bounds\(\backslash\)n"{}};}
+\DoxyCodeLine{394     \}}
+\DoxyCodeLine{395 \}}
+\DoxyCodeLine{396 }
+\DoxyCodeLine{397 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{398 \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_vector_a4f9f679233fd4d47cefc42c73b6bdfbe}{MAVector<T>::clear}}() \{}
+\DoxyCodeLine{399     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sz; i++) \{}
+\DoxyCodeLine{400         arr[i] = T();}
+\DoxyCodeLine{401     \}}
+\DoxyCodeLine{402     sz = 0;}
+\DoxyCodeLine{403 \}}
+\DoxyCodeLine{404 }
+\DoxyCodeLine{405 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{406 \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_vector_a81fcd90efb7cc77b54a146b149db926c}{MAVector<T>::insert}}(T* it1, \textcolor{keyword}{const} T\& Element) \{}
+\DoxyCodeLine{407     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{408         \textcolor{keywordflow}{if} (it1 -\/ arr > sz || it1 -\/ arr < 0) \textcolor{keywordflow}{throw} \textcolor{charliteral}{'e'};}
+\DoxyCodeLine{409         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (it1 -\/ arr == sz) push\_back(Element);}
+\DoxyCodeLine{410         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{411             \textcolor{keywordflow}{if} (sz == capacity) capacity *= 2;}
+\DoxyCodeLine{412 }
+\DoxyCodeLine{413             T* newArr = \textcolor{keyword}{new} T[capacity];}
+\DoxyCodeLine{414             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = begin(); it < it1; it++) \{}
+\DoxyCodeLine{415                 newArr[it -\/ begin()] = arr[it -\/ begin()];}
+\DoxyCodeLine{416             \}}
+\DoxyCodeLine{417             newArr[it1 -\/ begin()] = Element;}
+\DoxyCodeLine{418             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = it1; it < end(); it++) \{}
+\DoxyCodeLine{419                 newArr[it -\/ begin() + 1] = arr[it -\/ begin()];}
+\DoxyCodeLine{420             \}}
+\DoxyCodeLine{421 }
+\DoxyCodeLine{422             \textcolor{keyword}{delete}[] arr;}
+\DoxyCodeLine{423             arr = newArr;}
+\DoxyCodeLine{424             newArr = NULL;}
+\DoxyCodeLine{425             sz++;}
+\DoxyCodeLine{426         \}}
+\DoxyCodeLine{427     \}}
+\DoxyCodeLine{428     \textcolor{keywordflow}{catch} (\textcolor{keywordtype}{char} ch) \{}
+\DoxyCodeLine{429         cout << \textcolor{stringliteral}{"{}Error Out Of Bounds\(\backslash\)n"{}};}
+\DoxyCodeLine{430         exit(-\/1);}
+\DoxyCodeLine{431     \}}
+\DoxyCodeLine{432 \}}
+\DoxyCodeLine{433 }
+\DoxyCodeLine{434 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{435 T* \mbox{\hyperlink{class_m_a_vector_af45b39c5a0e9af80715994dd0ce6e284}{MAVector<T>::begin}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{436     \textcolor{keywordflow}{return} arr;}
+\DoxyCodeLine{437 \}}
+\DoxyCodeLine{438 }
+\DoxyCodeLine{439 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{440 T* \mbox{\hyperlink{class_m_a_vector_a5360a88b3b65b25b331b7226e92c25a6}{MAVector<T>::end}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{441     \textcolor{keywordflow}{return} arr + sz;}
+\DoxyCodeLine{442 \}}
+\DoxyCodeLine{443 }
+\DoxyCodeLine{444 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{445 \textcolor{keywordtype}{int} \mbox{\hyperlink{class_m_a_vector_a327a6efa83d5fdb6235b4383a97a8718}{MAVector<T>::size}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{446     \textcolor{keywordflow}{return} sz;}
+\DoxyCodeLine{447 \}}
+\DoxyCodeLine{448 }
+\DoxyCodeLine{449 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{450 \textcolor{keywordtype}{int} \mbox{\hyperlink{class_m_a_vector_a1cce856112c294153eac138829cd7e13}{MAVector<T>::Capacity}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{451     \textcolor{keywordflow}{return} capacity;}
+\DoxyCodeLine{452 \}}
+\DoxyCodeLine{453 }
+\DoxyCodeLine{454 }
+\DoxyCodeLine{455 }
+\DoxyCodeLine{456 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{457 \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_m_a_vector_acf998fa1e2be7b514cec186a6d22ce05}{MAVector<T>::empty}}() \{}
+\DoxyCodeLine{458     \textcolor{keywordflow}{return} (sz == 0);}
+\DoxyCodeLine{459 \}}
+\DoxyCodeLine{460 }
+\DoxyCodeLine{461 }
+\DoxyCodeLine{462 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{463 \textcolor{keywordtype}{void} \mbox{\hyperlink{class_m_a_vector_a35fbc415322a86ac3b4ceab1bbb802b7}{MAVector<T>::resize}}(\textcolor{keywordtype}{int} s) \{}
+\DoxyCodeLine{464 }
+\DoxyCodeLine{465     capacity = max(s, 10);}
+\DoxyCodeLine{466     T* newarr = \textcolor{keyword}{new} T[capacity];}
+\DoxyCodeLine{467 }
+\DoxyCodeLine{468     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sz; i++) \{}
+\DoxyCodeLine{469         newarr[i] = arr[i];}
+\DoxyCodeLine{470     \}}
+\DoxyCodeLine{471 }
+\DoxyCodeLine{472     \textcolor{keyword}{delete}[] arr;}
+\DoxyCodeLine{473     arr = newarr;}
+\DoxyCodeLine{474     newarr = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{475     sz = s;}
+\DoxyCodeLine{476 \}}
+\DoxyCodeLine{477 }
+\DoxyCodeLine{478 \textcolor{comment}{//template<class T>}}
+\DoxyCodeLine{479 \textcolor{comment}{//ostream\& operator << (ostream\& out, MAVector<T>\&v)}}
+\DoxyCodeLine{480 \textcolor{comment}{//\{}}
+\DoxyCodeLine{481 \textcolor{comment}{//  for(int i = 0; i < v.sz; i++)\{}}
+\DoxyCodeLine{482 \textcolor{comment}{//      out << v.arr[i] << "{} "{};}}
+\DoxyCodeLine{483 \textcolor{comment}{//  \}}}
+\DoxyCodeLine{484 \textcolor{comment}{//}}
+\DoxyCodeLine{485 \textcolor{comment}{//  return out;}}
+\DoxyCodeLine{486 \textcolor{comment}{//\}}}
+\DoxyCodeLine{487 }
+\DoxyCodeLine{488 }
+\DoxyCodeLine{489 \textcolor{keyword}{template}<\textcolor{keyword}{class} T>}
+\DoxyCodeLine{490 \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_m_a_vector_a0fd2a162f417cdfc209359769a9e72b0}{MAVector<T>::operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_m_a_vector}{MAVector<T>}}\& v2) \{}
+\DoxyCodeLine{491 }
+\DoxyCodeLine{492     \textcolor{keywordflow}{if} (sz != v2.\mbox{\hyperlink{class_m_a_vector_a7c04a21bb8ce2459c04f7b4bc675b5bd}{sz}}) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{493 }
+\DoxyCodeLine{494     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{495         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sz; i++) \{}
+\DoxyCodeLine{496             \textcolor{keywordflow}{if} (arr[i] != v2.\mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}}[i]) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{497         \}}
+\DoxyCodeLine{498     \}}
+\DoxyCodeLine{499 }
+\DoxyCodeLine{500     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{501 }
+\DoxyCodeLine{502 \}}
+\DoxyCodeLine{503 }
+\DoxyCodeLine{504 }
+\DoxyCodeLine{505 \textcolor{keyword}{template}<\textcolor{keyword}{class} T>}
+\DoxyCodeLine{506 \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_m_a_vector_a5f5f45cc00a7c451d49c2b8262f2e964}{MAVector<T>::operator<}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_m_a_vector}{MAVector<T>}}\& v2) \{}
+\DoxyCodeLine{507 }
+\DoxyCodeLine{508     \textcolor{keywordflow}{if} (v2.\mbox{\hyperlink{class_m_a_vector_a7c04a21bb8ce2459c04f7b4bc675b5bd}{sz}} > sz) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{509     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (sz > v2.\mbox{\hyperlink{class_m_a_vector_a7c04a21bb8ce2459c04f7b4bc675b5bd}{sz}}) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{510 }
+\DoxyCodeLine{511     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{512         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sz; i++) \{}
+\DoxyCodeLine{513             \textcolor{keywordflow}{if} (arr[i] < v2.\mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}}[i]) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{514         \}}
+\DoxyCodeLine{515     \}}
+\DoxyCodeLine{516 }
+\DoxyCodeLine{517     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{518 }
+\DoxyCodeLine{519 \}}
+\DoxyCodeLine{520 }
+\DoxyCodeLine{521 }
+\DoxyCodeLine{522 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

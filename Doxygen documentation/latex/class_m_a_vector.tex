@@ -1,0 +1,580 @@
+\hypertarget{class_m_a_vector}{}\doxysection{MAVector\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_m_a_vector}\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+
+
+\mbox{\hyperlink{class_m_a_vector}{MAVector}} class.  
+
+
+
+
+{\ttfamily \#include $<$A3\+\_\+\+Task1\+\_\+s13s14\+\_\+20210376\+\_\+20210244.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef T $\ast$ \mbox{\hyperlink{class_m_a_vector_a63c980ddfc0e0295d940cd09c95f206c}{iterator}}
+\begin{DoxyCompactList}\small\item\em iterator to iterate over elements of \mbox{\hyperlink{class_m_a_vector}{MAVector}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_a_vector_af2a5aa3469ec9fb7ac246a41b8501beb}{MAVector}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_m_a_vector_a45302c236b8bebe9f6692c1ed8b66e2f}{MAVector}} (int n)
+\begin{DoxyCompactList}\small\item\em parameterized constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_m_a_vector_af44779042ce303c3d4151b79c4ff09a3}{MAVector}} (T $\ast$a, int n)
+\begin{DoxyCompactList}\small\item\em overloaded parameterized constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_m_a_vector_a5b8608f663475f9067f2a7aa90313cd9}{MAVector}} (const \mbox{\hyperlink{class_m_a_vector}{MAVector}} \&other)
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_m_a_vector_a10434310327ce726ce4501507a1bb55f}{MAVector}} (\mbox{\hyperlink{class_m_a_vector}{MAVector}} \&\&other)
+\begin{DoxyCompactList}\small\item\em move constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_m_a_vector_a6e9f9870a66082e77adeb28f60494fb0}{MAVector}} (initializer\+\_\+list$<$ T $>$ lst)
+\begin{DoxyCompactList}\small\item\em constructor that take a list of elements \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_m_a_vector_a2e1a19ee33ae43e63aa86b46cccf68f9}{$\sim$\+MAVector}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_m_a_vector}{MAVector}} \& \mbox{\hyperlink{class_m_a_vector_a45faecab6d63075ecd5abd47a1faefc8}{operator=}} (const \mbox{\hyperlink{class_m_a_vector}{MAVector}} \&other)
+\begin{DoxyCompactList}\small\item\em copy assignment operator \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_m_a_vector}{MAVector}} \& \mbox{\hyperlink{class_m_a_vector_a7fe40c9b2e459c4ab3c7c6ecafeb8f57}{operator=}} (\mbox{\hyperlink{class_m_a_vector}{MAVector}} \&\&other)
+\begin{DoxyCompactList}\small\item\em move assignment operator \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_m_a_vector_a67dfd225a59832032fa8d8fc5fead3a5}{operator\mbox{[}$\,$\mbox{]}}} (int k)
+\begin{DoxyCompactList}\small\item\em overloaded \mbox{[}\mbox{]} operator that return a reference to the element in index k \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_m_a_vector_aaa2d4044c307ee1bccc2aa8e56958dda}{operator\mbox{[}$\,$\mbox{]}}} (int k) const
+\begin{DoxyCompactList}\small\item\em overloaded \mbox{[}\mbox{]} operator that return a copy version to the element in index k \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_m_a_vector_a19cdd381b1e826f4eed9c113783249e0}{push\+\_\+back}} (const T \&Element)
+\begin{DoxyCompactList}\small\item\em function to push element to \mbox{\hyperlink{class_m_a_vector}{MAVector}} \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_m_a_vector_af5499889ca5961bb2c720c4845fbf021}{pop\+\_\+back}} ()
+\begin{DoxyCompactList}\small\item\em function to return and remove last element in the class \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_a_vector_a680efa33479aea937df60340bb719bec}{erase}} (T $\ast$\mbox{\hyperlink{class_m_a_vector_a63c980ddfc0e0295d940cd09c95f206c}{iterator}})
+\begin{DoxyCompactList}\small\item\em erase some element by giving its address \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_a_vector_aa8946759a848ef844b9f151a498f31a9}{erase}} (T $\ast$it1, T $\ast$it2)
+\begin{DoxyCompactList}\small\item\em erase range of elements \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_a_vector_a4f9f679233fd4d47cefc42c73b6bdfbe}{clear}} ()
+\begin{DoxyCompactList}\small\item\em remove all elements in \mbox{\hyperlink{class_m_a_vector}{MAVector}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_a_vector_a81fcd90efb7cc77b54a146b149db926c}{insert}} (T $\ast$it1, const T \&Element)
+\begin{DoxyCompactList}\small\item\em insert some element in specific address \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_m_a_vector_a63c980ddfc0e0295d940cd09c95f206c}{iterator}} \mbox{\hyperlink{class_m_a_vector_af45b39c5a0e9af80715994dd0ce6e284}{begin}} () const
+\begin{DoxyCompactList}\small\item\em return the address of the first element in \mbox{\hyperlink{class_m_a_vector}{MAVector}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_m_a_vector_a63c980ddfc0e0295d940cd09c95f206c}{iterator}} \mbox{\hyperlink{class_m_a_vector_a5360a88b3b65b25b331b7226e92c25a6}{end}} () const
+\begin{DoxyCompactList}\small\item\em return the address of the end of \mbox{\hyperlink{class_m_a_vector}{MAVector}} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_m_a_vector_a327a6efa83d5fdb6235b4383a97a8718}{size}} () const
+\begin{DoxyCompactList}\small\item\em function to return the size of \mbox{\hyperlink{class_m_a_vector}{MAVector}} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_m_a_vector_a1cce856112c294153eac138829cd7e13}{Capacity}} () const
+\begin{DoxyCompactList}\small\item\em function to return the capacity of MAVecotr \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_a_vector_a35fbc415322a86ac3b4ceab1bbb802b7}{resize}} (int s)
+\begin{DoxyCompactList}\small\item\em function to resize the \mbox{\hyperlink{class_m_a_vector}{MAVector}} with new and bigger allocated space memory \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_m_a_vector_acf998fa1e2be7b514cec186a6d22ce05}{empty}} ()
+\begin{DoxyCompactList}\small\item\em check if \mbox{\hyperlink{class_m_a_vector}{MAVector}} is empty \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_m_a_vector_a0fd2a162f417cdfc209359769a9e72b0}{operator==}} (const \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$ \&)
+\begin{DoxyCompactList}\small\item\em overloaded == operator \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_m_a_vector_a5f5f45cc00a7c451d49c2b8262f2e964}{operator$<$}} (const \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$ \&)
+\begin{DoxyCompactList}\small\item\em overloaded \texorpdfstring{$<$}{<} operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_m_a_vector_a16be4426600eb02b465be3e95ca37902}{capacity}}
+\begin{DoxyCompactList}\small\item\em variable that hold the availble elements we can add without allocating new space \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_m_a_vector_a7c04a21bb8ce2459c04f7b4bc675b5bd}{sz}}
+\begin{DoxyCompactList}\small\item\em variable that hold the number of elements in \mbox{\hyperlink{class_m_a_vector}{MAVector}} \end{DoxyCompactList}\item 
+T $\ast$ \mbox{\hyperlink{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}{arr}}
+\begin{DoxyCompactList}\small\item\em dynamically alocating array in the heap that manages the \mbox{\hyperlink{class_m_a_vector}{MAVector}}\textquotesingle{}s elements \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_m_a_vector_ab00a435cb7695031816a52641c6c61bf}{operator$<$$<$}} (ostream \&out, \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$ \&v)
+\begin{DoxyCompactList}\small\item\em overloaded \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} operator to print the \mbox{\hyperlink{class_m_a_vector}{MAVector}}\textquotesingle{}s items \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class MAVector$<$ T $>$}
+\mbox{\hyperlink{class_m_a_vector}{MAVector}} class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_m_a_vector_a63c980ddfc0e0295d940cd09c95f206c}\label{class_m_a_vector_a63c980ddfc0e0295d940cd09c95f206c}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!iterator@{iterator}}
+\index{iterator@{iterator}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{iterator}{iterator}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef T$\ast$ \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::iterator}
+
+
+
+iterator to iterate over elements of \mbox{\hyperlink{class_m_a_vector}{MAVector}} 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_m_a_vector_af2a5aa3469ec9fb7ac246a41b8501beb}\label{class_m_a_vector_af2a5aa3469ec9fb7ac246a41b8501beb}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!MAVector@{MAVector}}
+\index{MAVector@{MAVector}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MAVector()}{MAVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\mbox{\hyperlink{class_m_a_vector}{\+::\+MAVector}}}
+
+
+
+default constructor 
+
+\mbox{\Hypertarget{class_m_a_vector_a45302c236b8bebe9f6692c1ed8b66e2f}\label{class_m_a_vector_a45302c236b8bebe9f6692c1ed8b66e2f}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!MAVector@{MAVector}}
+\index{MAVector@{MAVector}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MAVector()}{MAVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\mbox{\hyperlink{class_m_a_vector}{\+::\+MAVector}} (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+parameterized constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & size of \mbox{\hyperlink{class_m_a_vector}{MAVector}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_a_vector_af44779042ce303c3d4151b79c4ff09a3}\label{class_m_a_vector_af44779042ce303c3d4151b79c4ff09a3}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!MAVector@{MAVector}}
+\index{MAVector@{MAVector}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MAVector()}{MAVector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\mbox{\hyperlink{class_m_a_vector}{\+::\+MAVector}} (\begin{DoxyParamCaption}\item[{T $\ast$}]{a,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+overloaded parameterized constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & array of elements to put in \mbox{\hyperlink{class_m_a_vector}{MAVector}} \\
+\hline
+{\em n} & size of \mbox{\hyperlink{class_m_a_vector}{MAVector}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_a_vector_a5b8608f663475f9067f2a7aa90313cd9}\label{class_m_a_vector_a5b8608f663475f9067f2a7aa90313cd9}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!MAVector@{MAVector}}
+\index{MAVector@{MAVector}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MAVector()}{MAVector()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\mbox{\hyperlink{class_m_a_vector}{\+::\+MAVector}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})}
+
+
+
+copy constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_a_vector_a10434310327ce726ce4501507a1bb55f}\label{class_m_a_vector_a10434310327ce726ce4501507a1bb55f}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!MAVector@{MAVector}}
+\index{MAVector@{MAVector}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MAVector()}{MAVector()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\mbox{\hyperlink{class_m_a_vector}{\+::\+MAVector}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$ \&\&}]{other }\end{DoxyParamCaption})}
+
+
+
+move constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_a_vector_a6e9f9870a66082e77adeb28f60494fb0}\label{class_m_a_vector_a6e9f9870a66082e77adeb28f60494fb0}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!MAVector@{MAVector}}
+\index{MAVector@{MAVector}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{MAVector()}{MAVector()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\mbox{\hyperlink{class_m_a_vector}{\+::\+MAVector}} (\begin{DoxyParamCaption}\item[{initializer\+\_\+list$<$ T $>$}]{lst }\end{DoxyParamCaption})}
+
+
+
+constructor that take a list of elements 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_a_vector_a2e1a19ee33ae43e63aa86b46cccf68f9}\label{class_m_a_vector_a2e1a19ee33ae43e63aa86b46cccf68f9}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!````~MAVector@{$\sim$MAVector}}
+\index{````~MAVector@{$\sim$MAVector}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$MAVector()}{~MAVector()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_m_a_vector}{MAVector}}}
+
+
+
+destructor 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_m_a_vector_af45b39c5a0e9af80715994dd0ce6e284}\label{class_m_a_vector_af45b39c5a0e9af80715994dd0ce6e284}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T $\ast$ \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::begin}
+
+
+
+return the address of the first element in \mbox{\hyperlink{class_m_a_vector}{MAVector}} 
+
+\begin{DoxyReturn}{Returns}
+iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_a_vector_a1cce856112c294153eac138829cd7e13}\label{class_m_a_vector_a1cce856112c294153eac138829cd7e13}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!Capacity@{Capacity}}
+\index{Capacity@{Capacity}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Capacity()}{Capacity()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::\+Capacity}
+
+
+
+function to return the capacity of MAVecotr 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_a_vector_a4f9f679233fd4d47cefc42c73b6bdfbe}\label{class_m_a_vector_a4f9f679233fd4d47cefc42c73b6bdfbe}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!clear@{clear}}
+\index{clear@{clear}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::clear}
+
+
+
+remove all elements in \mbox{\hyperlink{class_m_a_vector}{MAVector}} 
+
+\mbox{\Hypertarget{class_m_a_vector_acf998fa1e2be7b514cec186a6d22ce05}\label{class_m_a_vector_acf998fa1e2be7b514cec186a6d22ce05}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!empty@{empty}}
+\index{empty@{empty}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::empty}
+
+
+
+check if \mbox{\hyperlink{class_m_a_vector}{MAVector}} is empty 
+
+\begin{DoxyReturn}{Returns}
+boolean value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_a_vector_a5360a88b3b65b25b331b7226e92c25a6}\label{class_m_a_vector_a5360a88b3b65b25b331b7226e92c25a6}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!end@{end}}
+\index{end@{end}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T $\ast$ \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::end}
+
+
+
+return the address of the end of \mbox{\hyperlink{class_m_a_vector}{MAVector}} 
+
+\begin{DoxyReturn}{Returns}
+iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_a_vector_aa8946759a848ef844b9f151a498f31a9}\label{class_m_a_vector_aa8946759a848ef844b9f151a498f31a9}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!erase@{erase}}
+\index{erase@{erase}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::erase (\begin{DoxyParamCaption}\item[{T $\ast$}]{it1,  }\item[{T $\ast$}]{it2 }\end{DoxyParamCaption})}
+
+
+
+erase range of elements 
+
+
+\begin{DoxyParams}{Parameters}
+{\em it1} & the begin of the interval \\
+\hline
+{\em it2} & the end of the interval \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_a_vector_a680efa33479aea937df60340bb719bec}\label{class_m_a_vector_a680efa33479aea937df60340bb719bec}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!erase@{erase}}
+\index{erase@{erase}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::erase (\begin{DoxyParamCaption}\item[{T $\ast$}]{iterator }\end{DoxyParamCaption})}
+
+
+
+erase some element by giving its address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iterator} & address of the element \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_a_vector_a81fcd90efb7cc77b54a146b149db926c}\label{class_m_a_vector_a81fcd90efb7cc77b54a146b149db926c}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{T $\ast$}]{it1,  }\item[{const T \&}]{Element }\end{DoxyParamCaption})}
+
+
+
+insert some element in specific address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em it1} & address to insert element in it \\
+\hline
+{\em Element} & element to insert \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_a_vector_a5f5f45cc00a7c451d49c2b8262f2e964}\label{class_m_a_vector_a5f5f45cc00a7c451d49c2b8262f2e964}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$ \&}]{v2 }\end{DoxyParamCaption})}
+
+
+
+overloaded \texorpdfstring{$<$}{<} operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$br$>$} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_a_vector_a45faecab6d63075ecd5abd47a1faefc8}\label{class_m_a_vector_a45faecab6d63075ecd5abd47a1faefc8}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$ \& \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})}
+
+
+
+copy assignment operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_a_vector_a7fe40c9b2e459c4ab3c7c6ecafeb8f57}\label{class_m_a_vector_a7fe40c9b2e459c4ab3c7c6ecafeb8f57}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$ \& \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$ \&\&}]{other }\end{DoxyParamCaption})}
+
+
+
+move assignment operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_a_vector_a0fd2a162f417cdfc209359769a9e72b0}\label{class_m_a_vector_a0fd2a162f417cdfc209359769a9e72b0}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$ \&}]{v2 }\end{DoxyParamCaption})}
+
+
+
+overloaded == operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$br$>$} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_a_vector_a67dfd225a59832032fa8d8fc5fead3a5}\label{class_m_a_vector_a67dfd225a59832032fa8d8fc5fead3a5}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \& \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+overloaded \mbox{[}\mbox{]} operator that return a reference to the element in index k 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_a_vector_aaa2d4044c307ee1bccc2aa8e56958dda}\label{class_m_a_vector_aaa2d4044c307ee1bccc2aa8e56958dda}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption}) const}
+
+
+
+overloaded \mbox{[}\mbox{]} operator that return a copy version to the element in index k 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_a_vector_af5499889ca5961bb2c720c4845fbf021}\label{class_m_a_vector_af5499889ca5961bb2c720c4845fbf021}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!pop\_back@{pop\_back}}
+\index{pop\_back@{pop\_back}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::pop\+\_\+back}
+
+
+
+function to return and remove last element in the class 
+
+\begin{DoxyReturn}{Returns}
+the element that has been removed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_a_vector_a19cdd381b1e826f4eed9c113783249e0}\label{class_m_a_vector_a19cdd381b1e826f4eed9c113783249e0}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const T \&}]{Element }\end{DoxyParamCaption})}
+
+
+
+function to push element to \mbox{\hyperlink{class_m_a_vector}{MAVector}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Element} & element to push \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_a_vector_a35fbc415322a86ac3b4ceab1bbb802b7}\label{class_m_a_vector_a35fbc415322a86ac3b4ceab1bbb802b7}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!resize@{resize}}
+\index{resize@{resize}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::resize (\begin{DoxyParamCaption}\item[{int}]{s }\end{DoxyParamCaption})}
+
+
+
+function to resize the \mbox{\hyperlink{class_m_a_vector}{MAVector}} with new and bigger allocated space memory 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & new size of \mbox{\hyperlink{class_m_a_vector}{MAVector}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_m_a_vector_a327a6efa83d5fdb6235b4383a97a8718}\label{class_m_a_vector_a327a6efa83d5fdb6235b4383a97a8718}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!size@{size}}
+\index{size@{size}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::size}
+
+
+
+function to return the size of \mbox{\hyperlink{class_m_a_vector}{MAVector}} 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_m_a_vector_ab00a435cb7695031816a52641c6c61bf}\label{class_m_a_vector_ab00a435cb7695031816a52641c6c61bf}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{\mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$ \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+overloaded \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} operator to print the \mbox{\hyperlink{class_m_a_vector}{MAVector}}\textquotesingle{}s items 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & \\
+\hline
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}\label{class_m_a_vector_adf3bbb035f0d3ef4794b9686b45c74f6}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!arr@{arr}}
+\index{arr@{arr}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{arr}{arr}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T$\ast$ \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::arr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+dynamically alocating array in the heap that manages the \mbox{\hyperlink{class_m_a_vector}{MAVector}}\textquotesingle{}s elements 
+
+\mbox{\Hypertarget{class_m_a_vector_a16be4426600eb02b465be3e95ca37902}\label{class_m_a_vector_a16be4426600eb02b465be3e95ca37902}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!capacity@{capacity}}
+\index{capacity@{capacity}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{capacity}{capacity}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::capacity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+variable that hold the availble elements we can add without allocating new space 
+
+\mbox{\Hypertarget{class_m_a_vector_a7c04a21bb8ce2459c04f7b4bc675b5bd}\label{class_m_a_vector_a7c04a21bb8ce2459c04f7b4bc675b5bd}} 
+\index{MAVector$<$ T $>$@{MAVector$<$ T $>$}!sz@{sz}}
+\index{sz@{sz}!MAVector$<$ T $>$@{MAVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{sz}{sz}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{class_m_a_vector}{MAVector}}$<$ T $>$\+::sz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+variable that hold the number of elements in \mbox{\hyperlink{class_m_a_vector}{MAVector}} 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_a3___task1__s13s14__20210376__20210244_8h}{A3\+\_\+\+Task1\+\_\+s13s14\+\_\+20210376\+\_\+20210244.\+h}}\end{DoxyCompactItemize}
